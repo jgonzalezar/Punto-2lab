@@ -123,4 +123,10 @@ public class LibreriaRuiz {
         }
     }
     
+    public void librosPorPedir(){
+        for (int i = 0; i < porPedir.size(); i++) {
+            Libro libro = porPedir.get(i);
+            System.out.println(libro.getNombre());
+        }
+    }
 }
