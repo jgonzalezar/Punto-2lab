@@ -14,10 +14,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        int opcion;
-        do{
+        
         LibreriaRuiz Libreria = new LibreriaRuiz();
         Estanteria estanteria = new Estanteria(12);
+        
+        int opcion = -1;
+        do{
         System.out.println("----------Bienvenido a la librería Ruiz----------");
         System.out.println("\n-----Menú de opciones-----");
         System.out.println("\n1. Agregar libros.");
@@ -170,7 +172,6 @@ public class Main {
                     System.out.println("La respuesta ingresada no es válida.");
                 }
                 break;
-                
             case 6 :
                 System.out.println("Digite el precio del libro:");
                 double Precio;
@@ -192,14 +193,10 @@ public class Main {
                 Libreria.addPorPedir(libro);
                 break;
             case 8 :
-                Libro librop= new Libro("Autor", "Ed","nom");
                 System.out.println("Estos son los libros que hacen falta pedir: ");
                 Libreria.librosPorPedir();
                 break;
-                
-            case 9 :
-                System.out.println("Adiós...");
         }
-        }while(opcion!=9);
-   }
+        }while (opcion!=9);            
+    }
 }
