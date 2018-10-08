@@ -17,6 +17,7 @@ public class Estanteria {
 
     public Estanteria(int id) {
         this.id = id;
+        this.libros = new ArrayList<>();
     }
 
     public int getId() {

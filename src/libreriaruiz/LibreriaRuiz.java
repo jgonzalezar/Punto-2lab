@@ -17,6 +17,7 @@ public class LibreriaRuiz {
 
     public LibreriaRuiz() {
         this.estantes = new ArrayList<>();
+        this.porPedir = new ArrayList<>();
     }
 
     public ArrayList<Libro> getPorPedir() {
@@ -133,6 +134,7 @@ public class LibreriaRuiz {
         for (int i = 0; i < porPedir.size(); i++) {
             Libro libro = porPedir.get(i);
             System.out.println(libro.getNombre());
+            
         }
     }
 }
