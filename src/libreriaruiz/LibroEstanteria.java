@@ -13,7 +13,7 @@ public class LibroEstanteria extends Libro{
     private boolean nuevo;
     private double precioVenta;
 
-    public LibroEstanteria(boolean nuevo, double precioVenta, String autor, String editorial, String nombre, double precio) {
+    public LibroEstanteria(boolean nuevo, double precioVenta, String autor, String editorial, String nombre) {
         super(autor, editorial, nombre);
         this.nuevo = nuevo;
         this.precioVenta = precioVenta;

@@ -54,10 +54,12 @@ public class LibreriaRuiz {
                 String editor = estantes.get(i).getLibros().get(j).getEditorial();
                 if(name == nombre && antiguedad == nuevo && creador == autor && costo == precio && editor == editorial){
                     estantes.get(i).getLibros().remove(j);
+                    System.out.println("El libro ha sido eliminado");
                     return true;
                 }
             }
         }
+        System.out.println("El libro no se pudo eliminar");
         return false;
     }
     /**
@@ -71,6 +73,8 @@ public class LibreriaRuiz {
                 boolean antiguedad = estantes.get(i).getLibros().get(j).isNuevo();
                 if(name == nombre && antiguedad == nuevo){
                     System.out.println("Hay un libro en el estante #" + estantes.get(i).getId());
+                }else{
+                    System.out.println("El libro que busca no está.");
                 }
             }
         }
@@ -87,6 +91,8 @@ public class LibreriaRuiz {
                 boolean antiguedad = estantes.get(i).getLibros().get(j).isNuevo();
                 if(creador == autor && antiguedad == nuevo){
                     System.out.println("Hay un libro en el estante #" + estantes.get(i).getId());
+                }else{
+                    System.out.println("El libro que requiere no está.");
                 }
             }
         }
